@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
         connfd = accept(listenfd, (struct sockaddr*)NULL ,NULL);
 
         /* Open the file that we wish to transfer */
-        FILE *fp = fopen("sentfile.txt","rb");
+        FILE *fp = fopen("sentfile.txt","ab");
         if(fp==NULL)
         {
             printf("File opern error");
